@@ -1,4 +1,6 @@
 import os
+import matplotlib
+matplotlib.use('Agg')  # Set backend for headless environment
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import seaborn as sns
